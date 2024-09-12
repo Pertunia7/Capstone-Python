@@ -1,0 +1,42 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Blog</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+      
+      <h1>Form</h1>
+	  
+	  <div class='container'>
+	  <form method = "POST">
+	    {% csrf_token%}
+		{{ form.as_p }}
+		<button type = "Submit" name= "button" class= "btn btn-primary">Submit</button>
+		
+		</div>
+	  			
+		
+
+      <div class="container my-5">
+        <h1>Get In Touch</h1>
+        <p>Email: womaninstem@gmail.com </p>
+        <blockquote class="blockquote">
+          <p>Success is not just measured by accolades but by the positive impact you create in your field and beyond. Strive to leave a lasting legacy.</p>
+          <footer class="blockquote-footer" style="color: rgb(109, 34, 104);">#WomenInSTEM
+            <div class="container">
+            <p>&copy; 2024 FutureTech Blog. All rights reserved.</p>
+        </div>
+          </footer>
+        </blockquote>
+      </div>
+      
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

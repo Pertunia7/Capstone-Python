@@ -1,0 +1,62 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Blog</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+          <h1 style="color: rgb(135, 139, 139);text-decoration: solid;">LATEST FROM OUR BLOG</h1>    
+          
+          <p style="color: rgb(236, 167, 231);text-decoration: underline;">FOR OVERARCHING WOMEN</p>
+        </div>     
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col"><h2 style="color: rgb(113, 130, 226);">Welcome to Empowering Women in Tech!</h2>
+            <p>Welcome to our blog, where we celebrate the incredible achievements and journeys of overachieving women in Computer Systems Engineering. Here, you'll find inspiring stories of women who have broken barriers, challenged norms, and paved the way for future generations in the tech industry.
+
+              Our mission is to empower and inspire you through the remarkable tales of women who have turned challenges into opportunities, redefining what it means to succeed in a male-dominated field. Whether you're a student, a professional, or simply curious about the world of computer systems engineering, we invite you to explore, learn, and be inspired.
+              
+              Thank you for joining us on this journey to celebrate and support women in STEM. Together, we can create a more inclusive and innovative future.
+              
+              Happy reading!
+            </p></div>
+        </div>
+      </div>
+      
+      <h1>Topics for the month</h1>
+	  <table class='table'>
+	  <thead>
+	    </tr><td>Topic</td></tr>
+		</thead>
+		<tbody>
+		{% for topic in topics %}
+		  <tr><td> </td>{{topic.topic_name}}</tr>
+		{ % endfor %}
+
+        </tbody>
+     </table>			
+		
+      <div class="container my-5">
+        <h1>Get In Touch</h1>
+        <p>Email: womaninstem@gmail.com </p>
+        <blockquote class="blockquote">
+          <p>Success is not just measured by accolades but by the positive impact you create in your field and beyond. Strive to leave a lasting legacy.</p>
+          <footer class="blockquote-footer" style="color: rgb(109, 34, 104);">#WomenInSTEM
+            <div class="container">
+            <p>&copy; 2024 FutureTech Blog. All rights reserved.</p>
+        </div>
+          </footer>
+        </blockquote>
+      </div>
+      
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
